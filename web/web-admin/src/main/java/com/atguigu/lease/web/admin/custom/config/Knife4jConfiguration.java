@@ -1,6 +1,5 @@
 package com.atguigu.lease.web.admin.custom.config;
 
-import com.sun.org.apache.bcel.internal.generic.RETURN;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import org.springdoc.core.models.GroupedOpenApi;
@@ -63,6 +62,7 @@ public class Knife4jConfiguration {
                         "/admin/file/**"
                 ).build();
     }
+
     @Bean
     public GroupedOpenApi leaseAPI() {
         return GroupedOpenApi.builder().group("租赁信息管理").
@@ -71,6 +71,7 @@ public class Knife4jConfiguration {
                         "/admin/agreement/**"
                 ).build();
     }
+
     @Bean
     public GroupedOpenApi userAPI() {
         return GroupedOpenApi.builder().group("平台用户管理").

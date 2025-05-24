@@ -1,5 +1,7 @@
 package com.atguigu.lease.common.mybatisplus;
 
+import org.apache.ibatis.javassist.tools.reflect.Metaobject;
+import org.apache.ibatis.reflection.MetaObject;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
 

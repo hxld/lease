@@ -33,7 +33,7 @@ public class LabelController {
     @Operation(summary = "新增或修改标签信息")
     @PostMapping("saveOrUpdate")
     public Result saveOrUpdateLabel(@RequestBody LabelInfo labelInfo) {
-        labelInfoService.save(labelInfo);
+        labelInfoService.saveOrUpdate(labelInfo);
         return Result.ok();
     }
 
